@@ -14,32 +14,55 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginTop="-80dp"
         android:layout_below="@id/bg"
-        android:columnCount="3"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:columnCount="3">
 
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="25dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"/>
+            </LinearLayout>
+
+
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="25dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp">
-        </androidx.cardview.widget.CardView>
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="25dp"></androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="25dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp">
-        </androidx.cardview.widget.CardView>
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="25dp"></androidx.cardview.widget.CardView>
 
 
     </GridLayout>
